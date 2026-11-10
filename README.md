@@ -61,3 +61,7 @@ APK 位于 `app/build/outputs/apk/debug/app-debug.apk`。项目包含 Gradle 8.1
 ## 验证状态
 
 28 项核心测试、Android 10 手机与平板共 6 项设备测试通过，Android lint 为零错误。Android 16 的软件模拟器出现系统级启动超时，运行兼容性仍待真机或硬件加速模拟器补验。详见 [测试记录](docs/TESTING.md)。
+
+## GitHub 测试版构建
+
+仓库提供手动触发的 `Publish test APK` 工作流，从 `v0.1.0` 标签源码重新构建、运行核心测试和 lint，并上传 APK 与 SHA-256 校验文件到预发布版本。该流程不提交或保存签名密钥。GitHub 构建会生成新的调试签名，与此前本地测试 APK 不同；正式发布应配置固定签名。
