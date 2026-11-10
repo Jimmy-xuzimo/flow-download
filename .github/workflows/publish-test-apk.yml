@@ -28,8 +28,16 @@ jobs:
           cache: gradle
       - name: Install Android build tools
         run: |
-          (yes || true) | sdkmanager --licenses > /dev/null
-          sdkmanager 'platforms;android-36' 'build-tools;36.0.0'
+          android_sdk_dir="$RUNNER_TEMP/android-sdk"
+          android_tools_archive="$RUNNER_TEMP/android-commandline-tools.zip"
+          mkdir -p "$android_sdk_dir/cmdline-tools"
+          curl --fail --location --retry 3 https://dl.google.com/android/repository/commandlinetools-linux-13114758_latest.zip -o "$android_tools_archive"
+          unzip -q "$android_tools_archive" -d "$android_sdk_dir/cmdline-tools"
+          mv "$android_sdk_dir/cmdline-tools/cmdline-tools" "$android_sdk_dir/cmdline-tools/latest"
+          (yes || true) | "$android_sdk_dir/cmdline-tools/latest/bin/sdkmanager" --sdk_root="$android_sdk_dir" --licenses > /dev/null
+          "$android_sdk_dir/cmdline-tools/latest/bin/sdkmanager" --sdk_root="$android_sdk_dir" 'platforms;android-36' 'build-tools;36.0.0'
+          echo "ANDROID_HOME=$android_sdk_dir" >> "$GITHUB_ENV"
+          echo "ANDROID_SDK_ROOT=$android_sdk_dir" >> "$GITHUB_ENV"
       - name: Run core tests, build APK and check lint
         run: ./gradlew :core:test :app:assembleDebug :app:lintDebug --no-daemon
       - name: Upload and publish testing APK
