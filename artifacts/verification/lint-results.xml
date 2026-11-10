@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="6" by="lint 8.11.1">
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of androidx.compose:compose-bom than 2025.05.01 is available: 2026.09.00"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="    implementation(platform(&quot;androidx.compose:compose-bom:2025.05.01&quot;))"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/workspace/app/build.gradle.kts"
+            line="27"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of androidx.activity:activity-compose than 1.10.1 is available: 1.13.0"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="    implementation(&quot;androidx.activity:activity-compose:1.10.1&quot;)"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/workspace/app/build.gradle.kts"
+            line="28"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of androidx.lifecycle:lifecycle-runtime-compose than 2.9.1 is available: 2.11.0"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="    implementation(&quot;androidx.lifecycle:lifecycle-runtime-compose:2.9.1&quot;)"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/workspace/app/build.gradle.kts"
+            line="34"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of androidx.room:room-runtime than 2.7.2 is available: 2.8.5"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="    implementation(&quot;androidx.room:room-runtime:2.7.2&quot;)"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/workspace/app/build.gradle.kts"
+            line="35"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of androidx.room:room-ktx than 2.7.2 is available: 2.8.5"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="    implementation(&quot;androidx.room:room-ktx:2.7.2&quot;)"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/workspace/app/build.gradle.kts"
+            line="36"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of androidx.room:room-compiler than 2.7.2 is available: 2.8.5"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="    ksp(&quot;androidx.room:room-compiler:2.7.2&quot;)"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/workspace/app/build.gradle.kts"
+            line="37"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of androidx.datastore:datastore-preferences than 1.1.7 is available: 1.3.0"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="    implementation(&quot;androidx.datastore:datastore-preferences:1.1.7&quot;)"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/workspace/app/build.gradle.kts"
+            line="38"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of androidx.documentfile:documentfile than 1.0.1 is available: 1.1.0"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="    implementation(&quot;androidx.documentfile:documentfile:1.0.1&quot;)"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/workspace/app/build.gradle.kts"
+            line="39"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of androidx.core:core-ktx than 1.16.0 is available: 1.19.1"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="    implementation(&quot;androidx.core:core-ktx:1.16.0&quot;)"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/workspace/app/build.gradle.kts"
+            line="40"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of androidx.test:runner than 1.6.2 is available: 1.7.0"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="    androidTestImplementation(&quot;androidx.test:runner:1.6.2&quot;)"
+        errorLine2="                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/workspace/app/build.gradle.kts"
+            line="43"
+            column="31"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of androidx.compose:compose-bom than 2025.05.01 is available: 2026.09.00"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="    androidTestImplementation(platform(&quot;androidx.compose:compose-bom:2025.05.01&quot;))"
+        errorLine2="                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/workspace/app/build.gradle.kts"
+            line="44"
+            column="31"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of androidx.test.ext:junit than 1.2.1 is available: 1.3.0"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="    androidTestImplementation(&quot;androidx.test.ext:junit:1.2.1&quot;)"
+        errorLine2="                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/workspace/app/build.gradle.kts"
+            line="45"
+            column="31"/>
+    </issue>
+
+    <issue
+        id="NewerVersionAvailable"
+        severity="Warning"
+        message="A newer version of org.jetbrains.kotlinx:kotlinx-coroutines-android than 1.10.2 is available: 1.11.0"
+        category="Correctness"
+        priority="4"
+        summary="Newer Library Versions Available"
+        explanation="This detector checks with a central repository to see if there are newer versions available for the dependencies used by this project. This is similar to the `GradleDependency` check, which checks for newer versions available in the Android SDK tools and libraries, but this works with any MavenCentral dependency, and connects to the library every time, which makes it more flexible but also **much** slower."
+        errorLine1="    implementation(&quot;org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.2&quot;)"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/workspace/app/build.gradle.kts"
+            line="41"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="NewerVersionAvailable"
+        severity="Warning"
+        message="A newer version of com.squareup.okhttp3:okhttp than 4.12.0 is available: 5.5.1"
+        category="Correctness"
+        priority="4"
+        summary="Newer Library Versions Available"
+        explanation="This detector checks with a central repository to see if there are newer versions available for the dependencies used by this project. This is similar to the `GradleDependency` check, which checks for newer versions available in the Android SDK tools and libraries, but this works with any MavenCentral dependency, and connects to the library every time, which makes it more flexible but also **much** slower."
+        errorLine1="    implementation(&quot;com.squareup.okhttp3:okhttp:4.12.0&quot;)"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/workspace/app/build.gradle.kts"
+            line="42"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="NewerVersionAvailable"
+        severity="Warning"
+        message="A newer version of com.squareup.okhttp3:mockwebserver than 4.12.0 is available: 5.5.1"
+        category="Correctness"
+        priority="4"
+        summary="Newer Library Versions Available"
+        explanation="This detector checks with a central repository to see if there are newer versions available for the dependencies used by this project. This is similar to the `GradleDependency` check, which checks for newer versions available in the Android SDK tools and libraries, but this works with any MavenCentral dependency, and connects to the library every time, which makes it more flexible but also **much** slower."
+        errorLine1="    androidTestImplementation(&quot;com.squareup.okhttp3:mockwebserver:4.12.0&quot;)"
+        errorLine2="                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/workspace/app/build.gradle.kts"
+            line="47"
+            column="31"/>
+    </issue>
+
+    <issue
+        id="DataExtractionRules"
+        severity="Warning"
+        message="The attribute `android:dataExtractionRules` only applies for Android 12 and higher; since `minSdkVersion` is API 29 you should also set `android:fullBackupContent`"
+        category="Security"
+        priority="3"
+        summary="Missing data extraction rules"
+        explanation="Before Android 12, the attributes `android:allowBackup` and `android:fullBackupContent` were used to configure all forms of backup, including cloud backups, device-to-device transfers and adb backup.&#xA;&#xA;In Android 12 and higher, these attributes have been deprecated and will only apply to cloud backups. You should instead use the attribute `android:dataExtractionRules`, specifying an `@xml` resource that configures which files to back up, for cloud backups and for device-to-device transfers, separately. If your `minSdkVersion` supports older versions, you&apos;ll still want to specify an `android:fullBackupContent` resource if the default behavior is not right for your app."
+        url="https://developer.android.com/about/versions/12/backup-restore#xml-changes"
+        urls="https://developer.android.com/about/versions/12/backup-restore#xml-changes,https://goo.gle/DataExtractionRules"
+        errorLine1="    &lt;application android:name=&quot;.FlowApp&quot; android:label=&quot;流速下载&quot; android:icon=&quot;@drawable/ic_launcher&quot; android:theme=&quot;@android:style/Theme.Material.Light.NoActionBar&quot; android:allowBackup=&quot;false&quot; android:dataExtractionRules=&quot;@xml/data_extraction_rules&quot; android:supportsRtl=&quot;true&quot; android:usesCleartextTraffic=&quot;true&quot;>"
+        errorLine2="                                                                                                                                                                                                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/workspace/app/src/main/AndroidManifest.xml"
+            line="8"
+            column="221"/>
+    </issue>
+
+    <issue
+        id="UseKtx"
+        severity="Warning"
+        message="Use the KTX extension function `String.toUri` instead?"
+        category="Productivity"
+        priority="6"
+        summary="Use KTX extension function"
+        explanation="The Android KTX libraries decorates the Android platform SDK as well as various libraries with more convenient extension functions available from Kotlin, allowing you to use default parameters, named parameters, and more."
+        errorLine1="            val directory = DocumentFile.fromTreeUri(context, Uri.parse(task.directory)) ?: throw IOException(&quot;保存目录不可用，请重新选择&quot;)"
+        errorLine2="                                                              ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/workspace/app/src/main/java/dev/flowdownload/FileExporter.kt"
+            line="27"
+            column="63"/>
+    </issue>
+
+    <issue
+        id="UseKtx"
+        severity="Warning"
+        message="Use the KTX extension function `String.toUri` instead?"
+        category="Productivity"
+        priority="6"
+        summary="Use KTX extension function"
+        explanation="The Android KTX libraries decorates the Android platform SDK as well as various libraries with more convenient extension functions available from Kotlin, allowing you to use default parameters, named parameters, and more."
+        errorLine1="            val parsed = Uri.parse(uri)"
+        errorLine2="                         ~~~~~~~~~~~~~~">
+        <location
+            file="/workspace/app/src/main/java/dev/flowdownload/FileExporter.kt"
+            line="66"
+            column="26"/>
+    </issue>
+
+    <issue
+        id="UseKtx"
+        severity="Warning"
+        message="Use the KTX extension function `String.toUri` instead?"
+        category="Productivity"
+        priority="6"
+        summary="Use KTX extension function"
+        explanation="The Android KTX libraries decorates the Android platform SDK as well as various libraries with more convenient extension functions available from Kotlin, allowing you to use default parameters, named parameters, and more."
+        errorLine1="                try { context.startActivity(Intent(Intent.ACTION_VIEW).setDataAndType(Uri.parse(task.outputUri), context.contentResolver.getType(Uri.parse(task.outputUri)) ?: &quot;application/octet-stream&quot;).addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)) }"
+        errorLine2="                                                                                      ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/workspace/app/src/main/java/dev/flowdownload/MainActivity.kt"
+            line="299"
+            column="87"/>
+    </issue>
+
+    <issue
+        id="UseKtx"
+        severity="Warning"
+        message="Use the KTX extension function `String.toUri` instead?"
+        category="Productivity"
+        priority="6"
+        summary="Use KTX extension function"
+        explanation="The Android KTX libraries decorates the Android platform SDK as well as various libraries with more convenient extension functions available from Kotlin, allowing you to use default parameters, named parameters, and more."
+        errorLine1="                try { context.startActivity(Intent(Intent.ACTION_VIEW).setDataAndType(Uri.parse(task.outputUri), context.contentResolver.getType(Uri.parse(task.outputUri)) ?: &quot;application/octet-stream&quot;).addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)) }"
+        errorLine2="                                                                                                                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/workspace/app/src/main/java/dev/flowdownload/MainActivity.kt"
+            line="299"
+            column="146"/>
+    </issue>
+
+</issues>

@@ -1,0 +1,58 @@
+Android 16 AOSP x86_64, 1280x800 160dpi, software emulation without KVM.
+Instrumentation aborted before tests: Process crashed.
+System events show startup ANRs in SystemUI, Phone, MediaProvider and Launcher.
+App startup was terminated while still inside framework GraphicsEnvironment.setup; no application Java exception was reported. Android 16 runtime validation is incomplete.
+
+"main" prio=5 tid=1 Runnable
+  | group="main" sCount=0 ucsCount=0 flags=0 obj=0x727e87f8 self=0x76972cb0fbe0
+  | sysTid=2569 nice=0 cgrp=foreground sched=0/0 handle=0x7697ffb61088
+  | state=R schedstat=( 4050306629 24832621824 804 ) utm=178 stm=226 core=0 HZ=100
+  | stack=0x7fffadd07000-0x7fffadd09000 stackSize=8188KB
+  | held mutexes= "mutator lock"(shared held)
+  native: #00 pc 007edde4  /apex/com.android.art/lib64/libart.so (art::DumpNativeStack+196) (BuildId: 108a321dc93c20580e74b855c407e975)
+  native: #01 pc 008fc9af  /apex/com.android.art/lib64/libart.so (art::Thread::DumpStack const+383) (BuildId: 108a321dc93c20580e74b855c407e975)
+  native: #02 pc 0091f0b8  /apex/com.android.art/lib64/libart.so (art::DumpCheckpoint::Run+584) (BuildId: 108a321dc93c20580e74b855c407e975)
+  native: #03 pc 008fda03  /apex/com.android.art/lib64/libart.so (art::Thread::RunCheckpointFunction+195) (BuildId: 108a321dc93c20580e74b855c407e975)
+  native: #04 pc 009a692e  /apex/com.android.art/lib64/libart.so (artJniMethodStart+78) (BuildId: 108a321dc93c20580e74b855c407e975)
+  native: #05 pc 009b0dcf  /apex/com.android.art/lib64/libart.so (artQuickGenericJniTrampoline+1503) (BuildId: 108a321dc93c20580e74b855c407e975)
+  native: #06 pc 0022c87b  /apex/com.android.art/lib64/libart.so (art_quick_generic_jni_trampoline+139) (BuildId: 108a321dc93c20580e74b855c407e975)
+  native: #07 pc 002121f6  /apex/com.android.art/lib64/libart.so (art_quick_invoke_static_stub+806) (BuildId: 108a321dc93c20580e74b855c407e975)
+  native: #08 pc 0046220c  /apex/com.android.art/lib64/libart.so (art::ArtMethod::Invoke+252) (BuildId: 108a321dc93c20580e74b855c407e975)
+  native: #09 pc 005fa142  /apex/com.android.art/lib64/libart.so (bool art::interpreter::DoCall<false>+2402) (BuildId: 108a321dc93c20580e74b855c407e975)
+  native: #10 pc 00234b05  /apex/com.android.art/lib64/libart.so (void art::interpreter::ExecuteSwitchImplCpp<false>+15989) (BuildId: 108a321dc93c20580e74b855c407e975)
+  native: #11 pc 00210915  /apex/com.android.art/lib64/libart.so (ExecuteSwitchImplAsm+5) (BuildId: 108a321dc93c20580e74b855c407e975)
+  native: #12 pc 001de7b4  /system/framework/framework.jar (offset 1b9a000) (android.util.Log.v)
+  native: #13 pc 005f2082  /apex/com.android.art/lib64/libart.so (art::interpreter::Execute +466) (BuildId: 108a321dc93c20580e74b855c407e975)
+  native: #14 pc 005f9396  /apex/com.android.art/lib64/libart.so (art::interpreter::ArtInterpreterToInterpreterBridge+102) (BuildId: 108a321dc93c20580e74b855c407e975)
+  native: #15 pc 005fa128  /apex/com.android.art/lib64/libart.so (bool art::interpreter::DoCall<false>+2376) (BuildId: 108a321dc93c20580e74b855c407e975)
+  native: #16 pc 00234b05  /apex/com.android.art/lib64/libart.so (void art::interpreter::ExecuteSwitchImplCpp<false>+15989) (BuildId: 108a321dc93c20580e74b855c407e975)
+  native: #17 pc 00210915  /apex/com.android.art/lib64/libart.so (ExecuteSwitchImplAsm+5) (BuildId: 108a321dc93c20580e74b855c407e975)
+  native: #18 pc 0025406c  /system/framework/framework.jar (offset 1286000) (android.os.GraphicsEnvironment.queryAngleChoice)
+  native: #19 pc 005f2082  /apex/com.android.art/lib64/libart.so (art::interpreter::Execute +466) (BuildId: 108a321dc93c20580e74b855c407e975)
+  native: #20 pc 005f9396  /apex/com.android.art/lib64/libart.so (art::interpreter::ArtInterpreterToInterpreterBridge+102) (BuildId: 108a321dc93c20580e74b855c407e975)
+  native: #21 pc 005fa128  /apex/com.android.art/lib64/libart.so (bool art::interpreter::DoCall<false>+2376) (BuildId: 108a321dc93c20580e74b855c407e975)
+  native: #22 pc 00233611  /apex/com.android.art/lib64/libart.so (void art::interpreter::ExecuteSwitchImplCpp<false>+10625) (BuildId: 108a321dc93c20580e74b855c407e975)
+  native: #23 pc 00210915  /apex/com.android.art/lib64/libart.so (ExecuteSwitchImplAsm+5) (BuildId: 108a321dc93c20580e74b855c407e975)
+  native: #24 pc 00253710  /system/framework/framework.jar (offset 1286000) (android.os.GraphicsEnvironment.setupAngle)
+  native: #25 pc 005f2082  /apex/com.android.art/lib64/libart.so (art::interpreter::Execute +466) (BuildId: 108a321dc93c20580e74b855c407e975)
+  native: #26 pc 005f9396  /apex/com.android.art/lib64/libart.so (art::interpreter::ArtInterpreterToInterpreterBridge+102) (BuildId: 108a321dc93c20580e74b855c407e975)
+  native: #27 pc 005fa128  /apex/com.android.art/lib64/libart.so (bool art::interpreter::DoCall<false>+2376) (BuildId: 108a321dc93c20580e74b855c407e975)
+  native: #28 pc 00233611  /apex/com.android.art/lib64/libart.so (void art::interpreter::ExecuteSwitchImplCpp<false>+10625) (BuildId: 108a321dc93c20580e74b855c407e975)
+  native: #29 pc 00210915  /apex/com.android.art/lib64/libart.so (ExecuteSwitchImplAsm+5) (BuildId: 108a321dc93c20580e74b855c407e975)
+  native: #30 pc 00254484  /system/framework/framework.jar (offset 1286000) (android.os.GraphicsEnvironment.setup)
+  native: #31 pc 005f2082  /apex/com.android.art/lib64/libart.so (art::interpreter::Execute +466) (BuildId: 108a321dc93c20580e74b855c407e975)
+  native: #32 pc 005f9396  /apex/com.android.art/lib64/libart.so (art::interpreter::ArtInterpreterToInterpreterBridge+102) (BuildId: 108a321dc93c20580e74b855c407e975)
+  native: #33 pc 005fa128  /apex/com.android.art/lib64/libart.so (bool art::interpreter::DoCall<false>+2376) (BuildId: 108a321dc93c20580e74b855c407e975)
+  native: #34 pc 00233611  /apex/com.android.art/lib64/libart.so (void art::interpreter::ExecuteSwitchImplCpp<false>+10625) (BuildId: 108a321dc93c20580e74b855c407e975)
+  native: #35 pc 00210915  /apex/com.android.art/lib64/libart.so (ExecuteSwitchImplAsm+5) (BuildId: 108a321dc93c20580e74b855c407e975)
+  native: #36 pc 001f3780  /system/framework/framework.jar (offset 7000) (android.app.ActivityThread.setupGraphicsSupport)
+  native: #37 pc 005f2082  /apex/com.android.art/lib64/libart.so (art::interpreter::Execute +466) (BuildId: 108a321dc93c20580e74b855c407e975)
+  native: #38 pc 005f9396  /apex/com.android.art/lib64/libart.so (art::interpreter::ArtInterpreterToInterpreterBridge+102) (BuildId: 108a321dc93c20580e74b855c407e975)
+  native: #39 pc 005fa128  /apex/com.android.art/lib64/libart.so (bool art::interpreter::DoCall<false>+2376) (BuildId: 108a321dc93c20580e74b855c407e975)
+  native: #40 pc 00233611  /apex/com.android.art/lib64/libart.so (void art::interpreter::ExecuteSwitchImplCpp<false>+10625) (BuildId: 108a321dc93c20580e74b855c407e975)
+  native: #41 pc 00210915  /apex/com.android.art/lib64/libart.so (ExecuteSwitchImplAsm+5) (BuildId: 108a321dc93c20580e74b855c407e975)
+  native: #42 pc 001ee788  /system/framework/framework.jar (offset 7000) (android.app.ActivityThread.handleBindApplication)
+  native: #43 pc 005f2082  /apex/com.android.art/lib64/libart.so (art::interpreter::Execute +466) (BuildId: 108a321dc93c20580e74b855c407e975)
+  native: #44 pc 005f9396  /apex/com.android.art/lib64/libart.so (art::interpreter::ArtInterpreterToInterpreterBridge+102) (BuildId: 108a321dc93c20580e74b855c407e975)
+  native: #45 pc 005fa128  /apex/com.android.art/lib64/libart.so (bool art::interpreter::DoCall<false>+2376) (BuildId: 108a321dc93c20580e74b855c407e975)
+  native: #46 pc 00233611  /apex/com.android.art/lib64/libart.so (void art::interpreter::ExecuteSwitchImplCpp<false

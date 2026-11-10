@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.flowdownload.core.InputRulesTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-11-10T09:42:21.883Z" hostname="e9340921124e" time="0.005">
+  <properties/>
+  <testcase name="authorizationValuesMayContainColons" classname="dev.flowdownload.core.InputRulesTest" time="0.001"/>
+  <testcase name="rejectRangeOverride" classname="dev.flowdownload.core.InputRulesTest" time="0.001"/>
+  <testcase name="batchesTrimAndDeduplicate" classname="dev.flowdownload.core.InputRulesTest" time="0.001"/>
+  <testcase name="filenamesCannotEscapeDirectory" classname="dev.flowdownload.core.InputRulesTest" time="0.001"/>
+  <testcase name="rejectMalformedHeader" classname="dev.flowdownload.core.InputRulesTest" time="0.0"/>
+  <testcase name="rejectFileUrls" classname="dev.flowdownload.core.InputRulesTest" time="0.0"/>
+  <testcase name="rejectEmbeddedPasswords" classname="dev.flowdownload.core.InputRulesTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

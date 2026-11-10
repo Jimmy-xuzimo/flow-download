@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.flowdownload.core.DownloadEngineTest" tests="21" skipped="0" failures="0" errors="0" timestamp="2026-11-10T09:42:19.309Z" hostname="e9340921124e" time="2.572">
+  <properties/>
+  <testcase name="clearRemovesOnlyRequestedTaskFiles" classname="dev.flowdownload.core.DownloadEngineTest" time="0.442"/>
+  <testcase name="customAuthenticationHeaderIsSent" classname="dev.flowdownload.core.DownloadEngineTest" time="0.478"/>
+  <testcase name="redirectsKeepDownloadWorking" classname="dev.flowdownload.core.DownloadEngineTest" time="0.09"/>
+  <testcase name="emptyFileWithUnsatisfiableProbeWorks" classname="dev.flowdownload.core.DownloadEngineTest" time="0.027"/>
+  <testcase name="completedSliceIsNotRequestedAgain" classname="dev.flowdownload.core.DownloadEngineTest" time="0.058"/>
+  <testcase name="nonRangeServerFallsBackToOneConnection" classname="dev.flowdownload.core.DownloadEngineTest" time="0.037"/>
+  <testcase name="parallelDownloadMatchesSha256" classname="dev.flowdownload.core.DownloadEngineTest" time="0.065"/>
+  <testcase name="expiredLinkIsReported" classname="dev.flowdownload.core.DownloadEngineTest" time="0.021"/>
+  <testcase name="crossOriginRedirectDoesNotLeakCustomCredentials" classname="dev.flowdownload.core.DownloadEngineTest" time="0.067"/>
+  <testcase name="globalLimiterAccountsForAllConnections" classname="dev.flowdownload.core.DownloadEngineTest" time="0.304"/>
+  <testcase name="changedEtagDuringTransferIsRejected" classname="dev.flowdownload.core.DownloadEngineTest" time="0.032"/>
+  <testcase name="changedValidatorNeverMergesOldData" classname="dev.flowdownload.core.DownloadEngineTest" time="0.015"/>
+  <testcase name="largeFilePlanUsesLongOffsets" classname="dev.flowdownload.core.DownloadEngineTest" time="0.061"/>
+  <testcase name="emptyFileWorks" classname="dev.flowdownload.core.DownloadEngineTest" time="0.02"/>
+  <testcase name="serverLosingRangeSupportCannotCorruptParts" classname="dev.flowdownload.core.DownloadEngineTest" time="0.056"/>
+  <testcase name="unknownLengthChunkedBodyIsSaved" classname="dev.flowdownload.core.DownloadEngineTest" time="0.051"/>
+  <testcase name="authenticationFailureDoesNotRetry" classname="dev.flowdownload.core.DownloadEngineTest" time="0.059"/>
+  <testcase name="resumeWithoutValidatorRestartsSafely" classname="dev.flowdownload.core.DownloadEngineTest" time="0.09"/>
+  <testcase name="interruptedSlicesResumeWithoutDuplicatingBytes" classname="dev.flowdownload.core.DownloadEngineTest" time="0.578"/>
+  <testcase name="temporaryServerFailureCanRetry" classname="dev.flowdownload.core.DownloadEngineTest" time="0.008"/>
+  <testcase name="incorrectContentRangeIsRejected" classname="dev.flowdownload.core.DownloadEngineTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

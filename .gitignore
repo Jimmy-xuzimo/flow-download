@@ -1,0 +1,12 @@
+.gradle/
+.gradle-home/
+.tools/
+local.properties
+**/build/
+*.jks
+.idea/
+.kotlin/
+__pycache__/
+*.pyc
+artifacts/*.apk
+artifacts/*.zip
